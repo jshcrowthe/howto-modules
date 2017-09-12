@@ -1,0 +1,20 @@
+{
+  "name": "@howto-modules/webpack",
+  "version": "1.0.0",
+  "description": "See https://npm.im/howto-modules for context",
+  "author": "Josh Crowther <jshcrowthe@gmail.com>",
+  "license": "MIT",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "prepublish": "echo 'Run `npm start` to see the module loader in action'"    
+  },
+  "dependencies": {
+    "@howto-modules/a": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
+  }
+}

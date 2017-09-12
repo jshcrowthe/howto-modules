@@ -1,0 +1,24 @@
+{
+  "name": "@howto-modules/browserify",
+  "version": "1.0.0",
+  "description": "See https://npm.im/howto-modules for context",
+  "author": "Josh Crowther <jshcrowthe@gmail.com>",
+  "license": "MIT",
+  "main": "index.html",
+  "scripts": {
+    "prestart": "gulp build",
+    "start": "serve",
+    "prepublish": "echo 'Run `npm start` to see the module loader in action'"
+  },
+  "dependencies": {
+    "@howto-modules/a": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-dynamic-import-node": "^1.1.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "serve": "^6.0.6",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

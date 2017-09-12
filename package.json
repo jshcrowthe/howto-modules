@@ -1,0 +1,24 @@
+{
+  "name": "howto-modules",
+  "version": "1.0.0",
+  "description": "A NPM module to demonstrate how all of the different bundler systems interact",
+  "scripts": {
+    "install": "lerna exec -- npm run prepublish",
+    "packages:publish": "lerna publish --skip-git --skip-npm --force-publish * --yes && lerna exec -- npm publish --registry http://localhost:4873",
+    "server:config": "npm adduser --registry http://localhost:4873",
+    "server:reset": "rm -rf ~/.config/verdaccio ~/.local/share/verdaccio",
+    "server:start": "verdaccio",
+    "start": "run-s server:reset server:start"
+  },
+  "author": "Josh Crowther <jshcrowthe@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^2.1.2",
+    "npm-run-all": "^4.1.1",
+    "verdaccio": "^2.3.6"
+  }
+}

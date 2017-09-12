@@ -1,0 +1,17 @@
+{
+  "name": "@howto-modules/c1",
+  "version": "1.0.0",
+  "description": "See https://npm.im/howto-modules for context",
+  "author": "Josh Crowther <jshcrowthe@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp build",
+    "prepublish": "npm run build"
+  },
+  "main": "dist/index.js",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "gulp": "gulpjs/gulp#4.0"
+  }
+}
